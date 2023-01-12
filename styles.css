@@ -1,0 +1,310 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html{
+	font-size: 10px;
+}
+/* HEADER */
+h1{
+	font-family: 'Space Grotesk', sans-serif;
+	font-weight: 700;
+	font-size: 6rem;
+	text-align: center;
+	margin-top: 3rem;
+	color: rgba(255, 255, 255, 0.865);
+}
+h1+p{
+	font-family: 'Space Grotesk', sans-serif;
+	font-weight: 300;
+	font-size: 2.5rem;
+	text-align: justify;
+	line-height: 3rem;
+	margin: auto;
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+	color: rgba(255, 255, 255, 0.865);
+	width: 800px;
+}
+
+/* GENERAL */
+body{
+	background-color: rgba(19, 19, 19, 0.938);
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: rgb(244, 244, 244);
+	width: 800px;
+	height: 600px;
+	margin: auto;
+	margin-bottom: 5rem;
+	border-radius: 2rem;
+}
+
+.card-flipped{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap-reverse;
+	background-color: rgb(244, 244, 244);
+	width: 800px;
+	height: 600px;
+	margin: auto;
+	margin-bottom: 5rem;
+	border-radius: 2rem;
+}
+
+h2{
+	font-family: 'Space Grotesk', sans-serif;
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+/* LYREBIRD, WATER-DEER, AYE-AYE*/
+.card-name{
+	padding: 7rem 0 1rem 5rem;
+}
+
+.card-text{
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 2rem;
+	width: 40%;
+	margin: 2rem 0 0 5rem;
+}
+
+/* LYREBIRD IMAGE */
+.lyrebird-img{
+	height: 35%;
+	border-radius: 1rem;
+	margin-top: 6rem;
+}
+
+/* BASILISK, PISTOL-SHRIMP, GLASS FROG */
+.card-flipped-name{
+	padding: 7rem 5rem 1rem 2rem;
+	text-align: right;
+}
+
+.card-flipped-text{
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 2rem;
+	width: 40%;
+	margin: 2rem 5rem 0 0;
+}
+
+/* BASILISK NAME */
+.basilisk-name{
+	text-align: left;
+	margin-left: 2rem;
+}
+
+/* BASILISK IMAGE */
+.basilisk-img{
+	height: 70%;
+	border-radius: 1rem;
+	margin: auto;
+	margin-left: 6rem;
+}
+
+/* WATER DEER IMAGE */
+.deer-img{
+	height: 75%;
+	border-radius: 1rem;
+	margin: auto;
+	margin-right: 5rem;
+}
+
+.shrimp-name{
+	text-align: left;
+	margin-left: 2rem;
+}
+
+/* SHRIMP IMAGE */
+.shrimp-img{
+	height: 80%;
+	border-radius: 1rem;
+	margin: auto;
+	margin-left: 8rem;
+}
+
+/* AYE-AYE IMAGE */
+.aye-aye-img{
+	height: 80%;
+	border-radius: 1rem;
+	margin: auto;
+	margin-right: 6rem;
+}
+
+/* FROG NAME */
+.frog-name{
+	text-align: left;
+	margin-left: 1rem;
+}
+
+/* FROG IMAGE */
+.frog-img{
+	height: 80%;
+	border-radius: 1rem;
+	margin: auto;
+	margin-left: 6rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 950px){
+    h1+p{
+        width: 650px;
+    }
+
+	.card, .card-flipped{
+		width: 700px;
+		height: 550px;
+	}
+
+	h2{
+		font-size: 2.5rem;
+	}
+
+	.card-text, .card-flipped-text{
+		font-size: 1.8rem;
+	}
+
+	.lyrebird-img{
+		height: 30%;
+	}
+
+	.deer-img{
+		height: 70%;
+		margin-left: 1rem;
+	}
+
+	.aye-aye-img{
+		height: 75%;
+		margin-left: 2rem;
+	}
+
+	.shrimp-img{
+		margin: auto;
+		margin-left: 5rem;
+	}
+
+	.frog-img{
+		margin: auto;
+		margin-left: 5rem;
+	}
+
+}
+
+@media (max-width: 850px){
+	.card, .card-flipped{
+		width: 600px;
+		height: 450px;
+	}
+
+	h1+p{
+		font-size: 2rem;
+		width: 550px;
+	}
+
+	h2{
+		font-size: 2rem;
+		margin-top: 0rem;
+	}
+
+	.card-text, .card-flipped-text{
+		font-size: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	.lyrebird-img{
+		height: 25%;
+	}
+}
+
+@media (max-width: 750px){
+	.card, .card-flipped{
+		width: 500px;
+		height: 350px;
+	}
+
+	h1{
+		font-size: 5.5rem;
+	}
+
+	h1+p{
+		width: 450px;
+	}
+
+	h2{
+		font-size: 1.5rem;
+		margin-top: -2rem;
+	}
+
+	.card-text, .card-flipped-text{
+		font-size: 1.2rem;
+	}
+
+	.lyrebird-img{
+		height: 20%;
+		margin: auto;
+		margin-top: 4rem;
+	}
+
+	.basilisk-img{
+		margin: auto;
+		margin-left: 3rem;
+	}
+}
+
+@media (max-width: 600px){
+	h1{
+		font-size: 5rem;
+	}
+
+    h1+p{
+        width: 400px;
+		font-size: 1.8rem;
+    }
+}
